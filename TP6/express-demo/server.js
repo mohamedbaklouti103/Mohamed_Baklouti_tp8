@@ -32,3 +32,11 @@ app.post('/api/tasks', (req, res) => {
 });
 
 app.use(express.static('public'));
+
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact');
+});
